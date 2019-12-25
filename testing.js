@@ -1,12 +1,8 @@
-let name, height, testsPass, testsFail;
-name = "fooobar";
-height = "79";
-testsPass = 'test status: passed';
-testsFail = 'test status: failed';
+var datapoint = require('./criterion.js');
 
 //tests
-if (name === 'foobar'){
+if (datapoint.name === 'foobar'){
     console.log(testsPass);
 }else{
-    console(testsFail);
+    console.log(datapoint.testsFail);
 }
